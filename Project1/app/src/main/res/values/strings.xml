@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">Project1</string>
+    <string name="action_settings">Settings</string>
+    <string name="hello_txt">This is my first app change!!!</string>
+</resources>
