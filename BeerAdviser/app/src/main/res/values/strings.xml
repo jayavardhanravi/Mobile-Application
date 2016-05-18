@@ -1,4 +1,12 @@
 <resources>
     <string name="app_name">Beer Adviser</string>
     <string name="action_settings">Settings</string>
+    <string name="heading_label">Find the best available beer</string>
+    <string name="button_label">Find Beer</string>
+    <string-array name="beer_spinner">
+        <item>light</item>
+        <item>amber</item>
+        <item>brown</item>
+        <item>dark</item>
+    </string-array>
 </resources>
