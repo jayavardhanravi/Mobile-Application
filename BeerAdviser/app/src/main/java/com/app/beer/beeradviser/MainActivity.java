@@ -56,6 +56,7 @@ public class MainActivity extends AppCompatActivity {
         return super.onOptionsItemSelected(item);
     }
 
+    // Finding beer method
     private BeerExpert b = new BeerExpert();
     public void getMyBeerList(View view) {
         TextView beer_obtained = (TextView) findViewById(R.id.textView2);
