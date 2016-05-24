@@ -9,4 +9,5 @@
         <item>brown</item>
         <item>dark</item>
     </string-array>
+    <string name="title_activity_share">ShareActivity</string>
 </resources>

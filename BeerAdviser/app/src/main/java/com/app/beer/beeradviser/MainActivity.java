@@ -1,5 +1,6 @@
 package com.app.beer.beeradviser;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.support.design.widget.FloatingActionButton;
 import android.support.design.widget.Snackbar;
@@ -61,6 +62,8 @@ public class MainActivity extends AppCompatActivity {
     public void getMyBeerList(View view) {
         TextView beer_obtained = (TextView) findViewById(R.id.textView2);
         Spinner beer_selected = (Spinner) findViewById(R.id.spinner);
+        Button beer_share = (Button) findViewById(R.id.button2);
+        beer_share.setVisibility(View.VISIBLE);
         List<String> listObtained = b.findingBeer(String.valueOf(beer_selected.getSelectedItem()));
         StringBuilder sb = new StringBuilder();
         for(String x:listObtained)
@@ -70,5 +73,10 @@ public class MainActivity extends AppCompatActivity {
         beer_obtained.setText(sb);
     }
 
-
+    public void shareMyBeerList(View view) {
+        TextView obtained_list = (TextView) findViewById(R.id.textView2);
+        Intent i = new Intent(this, ShareActivity.class);
+        i.putExtra("textView4", obtained_list.getText().toString());
+        startActivity(i);
+    }
 }

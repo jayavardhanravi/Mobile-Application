@@ -36,7 +36,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:textAppearance="?android:attr/textAppearanceLarge"
-        android:text="Large Text nad much more text goes here"
+        android:text=""
         android:id="@+id/textView2"
         android:layout_marginTop="31dp"
         android:layout_below="@+id/button"
@@ -47,9 +47,23 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="@string/button_label"
+        android:drawableLeft="@drawable/ic_beercup"
+        android:drawablePadding="6dp"
         android:id="@+id/button"
         android:onClick="getMyBeerList"
-        android:layout_below="@+id/spinner"
+        android:layout_alignTop="@+id/button2"
         android:layout_centerHorizontal="true" />
+
+    <Button
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:drawableLeft="@drawable/ic_share"
+        android:visibility="invisible"
+        android:id="@+id/button2"
+        android:onClick="shareMyBeerList"
+        android:layout_below="@+id/spinner"
+        android:layout_toRightOf="@+id/button"
+        android:layout_toEndOf="@+id/button" />
 
 </RelativeLayout>
