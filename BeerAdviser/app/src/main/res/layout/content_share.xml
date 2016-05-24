@@ -52,7 +52,7 @@
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Your Beer Lis!!!t"
+            android:text="Your Beer Lists"
             android:id="@+id/textView3"
             style="@android:style/TextAppearance.DeviceDefault.Large"
             android:layout_alignBottom="@+id/button4"
