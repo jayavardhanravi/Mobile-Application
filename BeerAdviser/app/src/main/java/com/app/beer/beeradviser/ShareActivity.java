@@ -21,4 +21,8 @@ public class ShareActivity extends AppCompatActivity {
         messageView.setText(msg);
     }
 
+    public void goHome(View view) {
+        Intent i = new Intent(this, MainActivity.class);
+        startActivity(i);
+    }
 }
